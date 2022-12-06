@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;300;400;600;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .title-font {
+    font-family: "Zen Dots", cursive;
+  }
+
+  .text-font {
+    font-family: "Saira Condensed", sans-serif;
+  }
+}
