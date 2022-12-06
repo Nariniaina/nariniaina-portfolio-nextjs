@@ -10,7 +10,7 @@ export default function Home() {
           name="description"
           content="Je suis Nariniaina. Avec 4 ans d'expérience. Je perfectionne mon
           art qu'est le développement en tant qu'artisan de la
-          technologie. Pour réaliser mon rêve et le votre."
+          technologie."
         />
       </Head>
       <div>
