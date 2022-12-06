@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nariniaina-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://nariniaina-portfolio.vercel.app/sitemap.xml

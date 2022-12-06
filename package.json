@@ -1,21 +1,25 @@
 {
   "name": "nariniaina-portfolio",
   "version": "1.0.0",
+  "homepage": "https://nariniaina-portfolio.vercel.app/",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "npx next build && npx next export"
+    "export": "npx next build && npx next export",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "gsap": "^3.11.3",
     "next": "13.0.6",
+    "next-sitemap": "^3.1.32",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
