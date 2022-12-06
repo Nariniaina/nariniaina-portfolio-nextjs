@@ -15,12 +15,16 @@ export default function Home() {
       </Head>
       <div>
         <nav className="max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 py-5 px-6">
-          <div className="block sm:hidden hover:cursor-pointer rounded-full">
+          <div
+            className="block sm:hidden hover:cursor-pointer rounded-full group p-2 
+          hover:bg-[#ff8900] transition-all ease-in-out duration-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="min-w-[25px] min-h-[25px] max-w-[25px] max-h-[25px] text-slate-600 
-            dark:text-gray-400"
+              className="min-w-[25px] min-h-[25px] max-w-[25px] max-h-[25px] 
+              group-hover:text-white text-slate-600 dark:text-gray-400
+              transition-all ease-in-out duration-500"
               viewBox="0 0 16 16"
             >
               <path
@@ -30,18 +34,24 @@ export default function Home() {
             </svg>
           </div>
           <ul className="tracking-wide hidden sm:flex flex-row gap-10 text-slate-800 text-lg">
-            <li className="cursor-pointer">A propos de moi</li>
-            <li className="cursor-pointer">Projets</li>
-            <li className="cursor-pointer">Compétences</li>
+            <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+              A propos de moi
+            </li>
+            <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+              Projets
+            </li>
+            <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+              Compétences
+            </li>
           </ul>
-          <button className="tracking-wide bg-gray-100 font-semibold rounded-full px-4 py-2">
+          <button className="tracking-wide bg-gray-100 transition-all hover:bg-orange-600 hover:scale-105 hover:text-white ease-in-out duration-500 font-semibold rounded-full px-4 py-2">
             Contactez-moi
           </button>
         </nav>
         <div className="grid grid-cols-2 lg:flex-row max-w-7xl mx-auto w-full">
           <div className="col-span-2 lg:col-span-1 order-1 lg:order-none mt-5 lg:mt-[55px] px-6">
             <div className="flex flex-col justify-center lg:justify-start lg:max-w-xl">
-              <h1 className="leading-[65px] title-font text-6xl text-slate-900">
+              <h1 className="leading-[65px] title-font text-6xl text-slate-900 break-words">
                 Mon nom est R.Nariniaina
               </h1>
               <p className="mt-7 text-xl leading-[30px] text-slate-700">
@@ -49,27 +59,27 @@ export default function Home() {
                 art qu'est le développement en tant qu'artisan de la
                 technologie. Pour réaliser mon rêve et le votre.{" "}
               </p>
-              <div className="mt-9 flex flex-wrap max-w-sm gap-5 text-xl">
-                <span className="whitespace-nowrap rounded-lg text-black font-semibold bg-[#fcb03d] w-min px-3 py-1">
+              <div className="mt-9 flex flex-wrap max-w-sm gap-4 text-xl">
+                <span className="transition-all ease-in-out duration-500 hover:scale-110 cursor-pointer whitespace-nowrap rounded-lg text-black font-semibold bg-[#fcb03d] w-min px-3 py-1">
                   Javascript
                 </span>
-                <span className="whitespace-nowrap rounded-lg text-white font-semibold bg-[#e66910] w-min px-3 py-1">
+                <span className="transition-all ease-in-out duration-500 hover:scale-110 cursor-pointer whitespace-nowrap rounded-lg text-white font-semibold bg-[#e66910] w-min px-3 py-1">
                   NextJS, ReactJS
                 </span>
-                <span className="whitespace-nowrap rounded-lg text-white font-semibold bg-[#241f21] w-min px-3 py-1">
+                <span className="transition-all ease-in-out duration-500 hover:scale-110 cursor-pointer whitespace-nowrap rounded-lg text-white font-semibold bg-[#241f21] w-min px-3 py-1">
                   NodeJS, Express
                 </span>
-                <span className="whitespace-nowrap rounded-lg text-black font-semibold bg-[#e1e1e1] w-min px-3 py-1">
+                <span className="transition-all ease-in-out duration-500 hover:scale-110 cursor-pointer whitespace-nowrap rounded-lg text-black font-semibold bg-[#e1e1e1] w-min px-3 py-1">
                   MongoDB/Firebase
                 </span>
               </div>
             </div>
           </div>
-          <div className="col-span-2 lg:col-span-1 flex items-center justify-center h-full relative">
+          <div className="group col-span-2 lg:col-span-1 flex items-center justify-center h-full relative">
             <div
-              className="hidden lg:flex w-min rounded-3xl 
+              className="hidden lg:flex w-min rounded-3xl group-hover:scale-105
                 absolute bottom-[25%] left-[45px] flex-col gap-1 bg-[#241f21]
-                px-6 py-5"
+                px-6 py-5 transition-all ease-in-out duration-500 group-hover:opacity-95"
             >
               <h4 className="text-5xl font-medium text-white">04+</h4>
               <p className="text-lg whitespace-nowrap text-white">
@@ -77,7 +87,8 @@ export default function Home() {
               </p>
             </div>
             <img
-              className="rounded-full object-contain"
+              className="group-hover:scale-90 z-[-1] rounded-full object-contain
+              transition-all ease-in-out duration-500"
               width="450"
               height="450"
               src="/assets/profile-pic.png"
@@ -110,7 +121,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-14 grid gap-20 lg:gap-0 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-            <div className="flex flex-col w-full md:w-max">
+            <div className="hover:scale-105 cursor-pointer rounded-2xl px-2 pt-2 pb-10 transition-all ease-in-out duration-500 hover:bg-orange-600 group h-min flex flex-col w-full md:w-max">
               <img
                 className="rounded-2xl object-cover w-full h-[250px]"
                 src="/assets/image-blur-placeholder.png"
@@ -121,11 +132,11 @@ export default function Home() {
                   <span className="text-4xl text-white">01</span>
                 </div>
               </div>
-              <h1 className="text-black text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
                 Food mobile app : E-gouter za
               </h1>
             </div>
-            <div className="xl:mt-[100px] flex flex-col w-full md:w-max">
+            <div className="hover:scale-105 cursor-pointer rounded-2xl px-2 pt-2 pb-10 transition-all ease-in-out duration-500 hover:bg-orange-600 group h-min xl:mt-[100px] flex flex-col w-full md:w-max">
               <img
                 className="rounded-2xl object-cover w-full h-[250px]"
                 src="/assets/image-blur-placeholder.png"
@@ -136,11 +147,11 @@ export default function Home() {
                   <span className="text-4xl text-white tracking-wider">02</span>
                 </div>
               </div>
-              <h1 className="text-black text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
                 Snapchat clone
               </h1>
             </div>
-            <div className="lg:mt-[100px] xl:mt-[200px] flex flex-col w-full md:w-max">
+            <div className="hover:scale-105 cursor-pointer rounded-2xl px-2 pt-2 pb-10 transition-all ease-in-out duration-500 hover:bg-orange-600 group h-min lg:mt-[100px] xl:mt-[200px] flex flex-col w-full md:w-max">
               <img
                 className="rounded-2xl object-cover w-full h-[250px]"
                 src="/assets/image-blur-placeholder.png"
@@ -151,7 +162,7 @@ export default function Home() {
                   <span className="text-4xl text-white tracking-wider">03</span>
                 </div>
               </div>
-              <h1 className="text-black text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
                 Netflix clone
               </h1>
             </div>
