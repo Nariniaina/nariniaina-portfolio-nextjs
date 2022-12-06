@@ -6,12 +6,22 @@ export default function Home() {
     <div className="pb-[1000px]">
       <Head>
         <title>Nariniaina portfolio</title>
+        <meta property="og:title" content="Nariniaina portfolio" />
         <meta
-          name="description"
+          property="og:description"
           content="Je suis Nariniaina. Avec 4 ans d'expérience. Je perfectionne mon
           art qu'est le développement en tant qu'artisan de la
           technologie."
         />
+        <meta property="og:type" content="image" />
+        <meta property="og:url" content="/assets/profile-pic.png" />
+        <meta property="og:image" content="/icon-soamadigna-min.png" />
+        <link rel="icon" href="/assets/profile-pic.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+        <meta name="keywords" content="nariniaina" />
       </Head>
       <div>
         <nav className="max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 py-5 px-6">
