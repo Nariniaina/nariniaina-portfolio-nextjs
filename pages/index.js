@@ -13,6 +13,12 @@ export default function Home() {
           art qu'est le développement en tant qu'artisan de la
           technologie."
         />
+        <meta
+          name="description"
+          content="Je suis Nariniaina. Avec 4 ans d'expérience. Je perfectionne mon
+          art qu'est le développement en tant qu'artisan de la
+          technologie."
+        />
         <meta property="og:type" content="image" />
         <meta property="og:url" content="/assets/profile-pic.png" />
         <meta property="og:image" content="/icon-soamadigna-min.png" />
@@ -61,7 +67,7 @@ export default function Home() {
         <div className="grid grid-cols-2 lg:flex-row max-w-7xl mx-auto w-full">
           <div className="col-span-2 lg:col-span-1 order-1 lg:order-none mt-5 lg:mt-[55px] px-6">
             <div className="flex flex-col justify-center lg:justify-start lg:max-w-xl">
-              <h1 className="leading-[65px] title-font text-6xl text-slate-900 break-words">
+              <h1 className="leading-[55px] sm:leading-[65px] title-font transition-all ease-in-out duration-500 text-4xl sm:text-6xl text-slate-900 break-words">
                 Mon nom est R.Nariniaina
               </h1>
               <p className="mt-7 text-xl leading-[30px] text-slate-700">
