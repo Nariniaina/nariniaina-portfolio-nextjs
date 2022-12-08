@@ -70,7 +70,7 @@ export default function Home() {
               >
                 Contactez-moi
               </button>
-              <div className="hidden md:flex flex-row items-center gap-2">
+              <div className="cursor-pointer hidden md:flex flex-row items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
