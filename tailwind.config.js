@@ -7,11 +7,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     typography: (theme) => ({}),
-    extend: {
-      fontFamily: {
-        sans: ["Saira Condensed"],
-      },
-    },
+    extend: {},
   },
   variants: {},
   plugins: [

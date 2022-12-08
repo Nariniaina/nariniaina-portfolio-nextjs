@@ -51,19 +51,23 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <ul className="tracking-wide hidden sm:flex flex-row gap-10 text-slate-800 text-lg">
-              <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+            <ul className="tracking-wide hidden sm:flex flex-row gap-10 text-slate-800 text-sm">
+              <li className="pb-1 cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
                 A propos de moi
               </li>
-              <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+              <li className="pb-1 cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
                 Projets
               </li>
-              <li className="cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
+              <li className="pb-1 cursor-pointer border-b-4 border-transparent hover:border-orange-400 transition-all ease-in-out duration-500">
                 Compétences
               </li>
             </ul>
             <div className="flex flex-row items-center gap-5">
-              <button className="tracking-wide bg-gray-100 transition-all hover:bg-orange-600 hover:scale-105 hover:text-white ease-in-out duration-500 font-semibold rounded-full px-4 py-2">
+              <button
+                className="tracking-wide bg-gray-100 transition-all hover:bg-orange-600 
+                hover:scale-105 hover:text-white ease-in-out duration-500 font-semibold 
+                rounded-full px-4 py-2 text-sm"
+              >
                 Contactez-moi
               </button>
               <div className="hidden md:flex flex-row items-center gap-2">
@@ -77,7 +81,7 @@ export default function Home() {
                 >
                   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                 </svg>
-                <h4 className="text-slate-800 font-semibold text-lg">
+                <h4 className="text-slate-800 font-semibold text-sm">
                   From Madagascar
                 </h4>
               </div>
@@ -89,12 +93,12 @@ export default function Home() {
                 <h1 className="leading-[55px] sm:leading-[75px] title-font transition-all ease-in-out duration-500 text-4xl sm:text-6xl text-slate-900 break-words">
                   Mon nom est R.Nariniaina
                 </h1>
-                <p className="mt-7 text-xl leading-[30px] text-slate-700">
+                <p className="mt-7 text-lg leading-[30px] text-slate-700">
                   Je suis Nariniaina. Avec 4 ans d'expérience. Je perfectionne
                   mon art qu'est le développement en tant qu'artisan de la
                   technologie. Pour réaliser mon rêve et le votre.{" "}
                 </p>
-                <div className="mt-9 flex flex-wrap max-w-sm gap-4 text-xl">
+                <div className="mt-9 flex flex-wrap max-w-sm gap-4 text-md">
                   <span className="transition-all ease-in-out duration-500 hover:scale-110 cursor-pointer whitespace-nowrap rounded-lg text-black font-semibold bg-[#ffd495] w-min px-3 py-1">
                     Javascript
                   </span>
@@ -117,7 +121,7 @@ export default function Home() {
                 px-6 py-5 transition-all ease-in-out duration-500 group-hover:opacity-95"
               >
                 <h4 className="text-5xl font-medium text-white">04+</h4>
-                <p className="text-lg whitespace-nowrap text-white">
+                <p className="text-md whitespace-nowrap text-white">
                   ans d'expériences
                 </p>
               </div>
@@ -134,7 +138,7 @@ export default function Home() {
         </header>
         <div className="max-w-7xl mx-auto px-6 mt-10">
           <div className="flex flex-row justify-between gap-5">
-            <h1 className="text-black text-4xl tracking-widerr">
+            <h1 className="text-black text-2xl tracking-widerr">
               Derniers projets
             </h1>
             <Link
@@ -142,7 +146,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="hover:opacity-80 cursor-pointer flex flex-row gap-3 items-end sm:items-center text-lg">
+              <div className="hover:opacity-80 cursor-pointer flex flex-row gap-3 items-end sm:items-center text-md">
                 <p>Github projects</p>
                 <div className="h-min w-min">
                   <svg
@@ -171,7 +175,7 @@ export default function Home() {
                   <span className="text-4xl text-white">01</span>
                 </div>
               </div>
-              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-xl w-full max-w-[240px] mt-5 sm:-mt-[15px]">
                 Food mobile app : E-gouter za
               </h1>
             </div>
@@ -186,7 +190,7 @@ export default function Home() {
                   <span className="text-4xl text-white tracking-wider">02</span>
                 </div>
               </div>
-              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-xl w-full max-w-[240px] mt-5 sm:-mt-[15px]">
                 Snapchat clone
               </h1>
             </div>
@@ -201,7 +205,7 @@ export default function Home() {
                   <span className="text-4xl text-white tracking-wider">03</span>
                 </div>
               </div>
-              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-2xl w-[300px] -mt-[15px]">
+              <h1 className="pl-5 transition-all ease-in-out duration-500 text-black group-hover:text-white text-xl w-full max-w-[240px] mt-5 sm:-mt-[15px]">
                 Netflix clone
               </h1>
             </div>
